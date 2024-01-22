@@ -26,6 +26,8 @@
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
+    <!--Link raw css-->
+    <link rel="stylesheet" href="style.css" />
     <!--font style-->
     <style>
       .font-manrope {
@@ -39,7 +41,18 @@
         theme: {
           extend: {
             colors: {
-              clifford: "#da373d",
+              dark: "#131318",
+              ashdark: "#424247",
+              ashlight: "#89898B",
+              orange: "#FF4240",
+              green: "#49D293",
+              bangi: "#FFB546",
+              blue: "#4C8DF1",
+            },
+            fontSize: {
+              large: "36px",
+              medium: "20px",
+              small: "16px",
             },
           },
         },
@@ -48,8 +61,67 @@
 
     <title>Document</title>
   </head>
-  <body class="font-manrope">
-    <header></header>
+  <body class="font-manrope bg-blue">
+    <header>
+      <nav>
+        <div class="mx-auto max-w-[1170px]">
+          <div class="navbar bg-base-100">
+            <div class="navbar-start">
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h8m-8 6h16"
+                    />
+                  </svg>
+                </div>
+                <ul
+                  tabindex="0"
+                  class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+                >
+                  <li><a>Home</a></li>
+                  <li><a>About</a></li>
+                  <li><a>Pages</a></li>
+                  <li><a>Blog</a></li>
+                  <li><a>Contact</a></li>
+                  <li>
+                    <a> <i class="fa-solid fa-magnifying-glass"></i></a>
+                  </li>
+                </ul>
+              </div>
+              <a class="btn btn-ghost text-large"
+                >Hockey<span class="text-orange">’</span>s</a
+              >
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1 color-dark;]">
+                <li><a>Home</a></li>
+                <li><a>About</a></li>
+                <li><a>Pages</a></li>
+                <li><a>Blog</a></li>
+                <li><a>Contact</a></li>
+              </ul>
+            </div>
+
+            <div class="navbar-end">
+              <button class="btn btn-ghost btn-circle hidden sm:block">
+                <i class="fa-solid fa-magnifying-glass text-small"></i>
+              </button>
+              <a class="btn px-6 py-4 bg-orange text-white bold">Get Ticket</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
     <main></main>
     <footer></footer>
   </body>
