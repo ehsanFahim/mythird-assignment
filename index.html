@@ -61,11 +61,11 @@
 
     <title>Document</title>
   </head>
-  <body class="font-manrope bg-blue">
-    <header>
+  <body class="font-manrope">
+    <header class="">
       <nav>
         <div class="mx-auto max-w-[1170px]">
-          <div class="navbar bg-base-100">
+          <div class="navbar bg-base-100 py-12">
             <div class="navbar-start">
               <div class="dropdown">
                 <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -114,13 +114,63 @@
 
             <div class="navbar-end">
               <button class="btn btn-ghost btn-circle hidden sm:block">
-                <i class="fa-solid fa-magnifying-glass text-small"></i>
+                <i class="fa-solid fa-magnifying-glass text-2xl 8"></i>
               </button>
               <a class="btn px-6 py-4 bg-orange text-white bold">Get Ticket</a>
             </div>
           </div>
         </div>
       </nav>
+      <div
+        class="mx-auto max-w-[1170px] h-[550px]"
+        style="background-image: url(./Images/banner.png)"
+      >
+        <div class="component flex justify-between items-end mx-8 pb-8 h-full">
+          <div class="buttons flex gap-4">
+            <div class="sam">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-14 h-14 bg-black text-white btn rounded-full"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15.75 19.5 8.25 12l7.5-7.5"
+                />
+              </svg>
+            </div>
+            <div class="sam-btn">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-14 h-14 bg-black text-white btn rounded-full"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m8.25 4.5 7.5 7.5-7.5 7.5"
+                />
+              </svg>
+            </div>
+          </div>
+          <div class="texts bg-dark max-w-[502px] p-5 rounded-lg">
+            <h4 class="text-white text-2xl font-extrabold">
+              Meet all the heroes from the field
+            </h4>
+            <p class="text-white text-small pt-4">
+              Dit amet consectetur. Condimentum dignissim adipiscing aliquam
+              turpis placerat dolor. Purus urna in sit nullam proin.
+            </p>
+          </div>
+        </div>
+      </div>
     </header>
     <main></main>
     <footer></footer>
