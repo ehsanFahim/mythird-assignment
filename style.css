@@ -3,5 +3,6 @@ ul > li{
 }
 ul > li:hover{
     background: white !important;
-    color: #FF4240 !important;
+    color: #ffffff99;
+    
 }
